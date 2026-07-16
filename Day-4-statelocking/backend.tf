@@ -6,5 +6,4 @@ terraform {
     use_lockfile = true #supports state locking only below versions of terraform 0.9.0 and above
     dynamodb_table = "my-second-lock-table" #supports state locking only below versions of terraform 0.9.0 and above}
 }
-
-
+}
