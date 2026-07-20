@@ -1,5 +1,5 @@
 
-resource "aws_instance" "mahi" {
+resource "aws_instance" "mahiesh" {
   ami           = var.ami
   instance_type = var.instance_type
   tags          = var.tags
