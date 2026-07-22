@@ -1,9 +1,7 @@
 module "Dev" {
   source        = "../Day-9_Modules"
-  ami           = "ami-002eb20eceab2c0ad"
-  instance_type = "t2.nano"
-  tags = {
-    Name = "dev-instance"
-  }
+  ami           = var.ami
+  instance_type = var.instance_type
+  tags = var.tags
 }
 
