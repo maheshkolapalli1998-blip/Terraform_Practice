@@ -82,8 +82,8 @@ resource "aws_security_group" "Dev_SG" {
 
 resource "aws_instance" "Dev_Instance" {
   count                      = 0
-  ami                        = "ami-06067086cf86c58e6"
-  instance_type              = "t2.micro"
+  ami                        = "ami-0b826bb6d96d2afe4"
+  instance_type              = "t3.micro"
   subnet_id                  = aws_subnet.Dev_Subnet.id
   vpc_security_group_ids     = [aws_security_group.Dev_SG.id]
   associate_public_ip_address = true
